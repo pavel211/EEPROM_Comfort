@@ -8,31 +8,22 @@
 
 Функции записи проверяют правильность записанных данных их чтением и сравнением полученных значений. Если данные сходятся - возвращается 'true', если нет - 'false'.
 
-Параметр StartCell - первая ячейка В ПЗУ для чтения/записи. Данные разных типов имеют разную длину:
-float: 4 байта,
-
-int: 2 байта,
-
-long: 4 байта,
-
-string: MaxLength + 1 байт.
+Параметр StartCell - первая ячейка В ПЗУ для чтения/записи. Данные разных типов имеют разную длину:<br />
+float: 4 байта,<br />
+int: 2 байта,<br />
+long: 4 байта,<br />
+string: MaxLength + 1 байт.<br />
 Это необходимо учитывать при записи/чтении данных. Т.е. если необходимо записать переменную float, то следующую переменную можно записать только через 4 байта.
 
 Функции
 ------------------
 
-float EepromReadFloat (int StartCell, float MinValue, float MaxValue, float StandartValue)
+float EepromReadFloat (int StartCell, float MinValue, float MaxValue, float StandartValue)<br />
+int EepromReadInt (int StartCell, int MinValue, int MaxValue, int StandartValue)<br />
+long EepromReadLong (int StartCell, long MinValue, long MaxValue, long StandartValue)<br />
+String EepromReadString (int StartCell, String StandartValue, int MaxLength)<br />
 
-int EepromReadInt (int StartCell, int MinValue, int MaxValue, int StandartValue)
-
-long EepromReadLong (int StartCell, long MinValue, long MaxValue, long StandartValue)
-
-String EepromReadString (int StartCell, String StandartValue, int MaxLength)
-
-bool EepromSaveFloat (int StartCell, String SaveValue)
-
-bool EepromSaveInt (int StartCell, String SaveValue)
-
-bool EepromSaveLong (int StartCell, String SaveValue)
-
+bool EepromSaveFloat (int StartCell, String SaveValue)<br />
+bool EepromSaveInt (int StartCell, String SaveValue)<br />
+bool EepromSaveLong (int StartCell, String SaveValue)<br />
 bool EepromSaveString (int StartCell, String SaveValue, int MaxLength)
