@@ -27,3 +27,12 @@ bool EepromSaveFloat (int StartCell, String SaveValue)<br />
 bool EepromSaveInt (int StartCell, String SaveValue)<br />
 bool EepromSaveLong (int StartCell, String SaveValue)<br />
 bool EepromSaveString (int StartCell, String SaveValue, int MaxLength)
+
+Подключение библиотеки
+------------------
+
+Для подключения библиотеки ее файл можно положить в каталог libraries arduino или напрямую в каталог проекта и подключить директивой:
+
+```
+#include "EEPROM.h"
+```
