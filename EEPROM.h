@@ -3,6 +3,7 @@
 // ESP8266 microcontroller in the Arduino environment is likely to work 
 // on other platforms.
 // Page of project: https://github.com/pavel211/EEPROM_Comfort/
+// License: GNU GPL-3.0
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 #include <EEPROM.h>
