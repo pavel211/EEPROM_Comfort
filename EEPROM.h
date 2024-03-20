@@ -1,6 +1,11 @@
-#include <EEPROM.h>
-
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// A set of functions for easy reading and writing to the EEPROM for the
+// ESP8266 microcontroller in the Arduino environment is likely to work 
+// on other platforms.
+// Page of project: https://github.com/pavel211/EEPROM_Comfort/
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+#include <EEPROM.h>
 
 boolean isFloat(String tString) {
   String tBuf;
